@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import SayMyName from './components/sayMyName';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <SayMyName nome = 'Vitor'  idade = '21' profissao = 'Desenvolvedor front end'/>
         <a
           className="App-link"
           href="https://reactjs.org"
