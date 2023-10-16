@@ -1,19 +1,20 @@
 
 import './App.css';
-import OutraLista from './components/Outralista';
+import SeuNome from './components/SeuNome';
+import { useState } from 'react';
 
 function App() {
 
-  const MinhaLista = ['React' , 'Vue' , 'Angular']
+  const [name , setName] = useState()
 
   return (
     <div className='container'>
       <div className='form'>
-        <OutraLista itens={MinhaLista}/>
-        <OutraLista itens={[]}/>
+      <SeuNome name={name} setName={setName}/>
         </div>
       </div>
         )
 }
+
 
 export default App;
