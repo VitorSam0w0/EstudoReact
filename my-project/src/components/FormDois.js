@@ -1,35 +1,35 @@
-import {useState} from 'react'
+import { useState } from "react"
 
 function FormDois() {
 
-    function enviar(e) {
-        e.preventDefault()
-        const texto = document.getElementById('texto')
-        texto.innerHTML = (`O seu nome é ${name}`)
+    function enviar(a) {
+        a.preventDefault()
+        const text = document.getElementById('text')
+        text.innerHTML = (`Seu nome de usuario é ${nome}`)
     }
 
-    const [name, setName] = useState()
+    const [nome, setNome] = useState()
 
-    return(
+    return (
         <>
-        <h1>Meu form de teste</h1>
-        <form onSubmit={enviar}
-        >
-            <label htmlfor='name'>Nome:</label>
-            <input
-                type="text"
-                id="name"
-                placehover="Digite o seu nome..."
-                onChange = {(e) => setName(e.target.value)}
-            />
+        <form onSubmit={enviar}>
             <div>
-            <input
-                type='submit'
-                value='Enviar'
+                <label id="nome">Nome: </label>
+                <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                onChange = {(a) => setNome(a.target.value)}
                 ></input>
             </div>
+            <div>
+                <input
+                type="submit"
+                value='Enviar'>
+                </input>
+            </div>
         </form>
-        <p id='texto'></p>
+        <p id="text"></p>
         </>
     )
 }
