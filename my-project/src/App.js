@@ -1,15 +1,14 @@
 
 import './App.css';
-import Evento from './components/Evento';
-import Form from './components/Form'
 import Condicional from './components/Condicional';
+import FormDois from './components/FormDois';
 
 function App() {
   return (
     <div className='container'>
       <div className='form'>
-        <Condicional/>
-      </div>
+      <FormDois/>
+        </div>
       </div>
         );
 }
