@@ -9,7 +9,7 @@ import './Estilos/cssGeral.css'
 function App() {
 
   return (
-    <>
+    <div>
     <Router>
       <NavBar/>
       <Routes>
@@ -19,7 +19,7 @@ function App() {
       </Routes>
     </Router>
     <Footer/>
-    </>
+    </div>
   )
 }
 
