@@ -1,3 +1,4 @@
+import '../Estilos/Home.css'
 function Home() {
     return (
         <div>

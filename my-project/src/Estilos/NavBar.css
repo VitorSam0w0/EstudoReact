@@ -1,0 +1,26 @@
+.container ul {
+    list-style: none;
+    align-items: center;
+}
+
+.container ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 17pt;
+    font-family: monospace;
+}
+
+.container ul li:hover {
+    scale: 1.07;
+    transition: 1s;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container ul li a:hover {
+    color: red;
+    transition: 1s;
+}

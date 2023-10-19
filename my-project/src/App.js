@@ -1,20 +1,25 @@
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NavBar from './paginas/NavBar'
 import Home from './paginas/Home'
 import Empresa from "./paginas/Empresa";
 import Contato from "./paginas/Contato";
+import Footer from "./paginas/Footer";
+import './Estilos/cssGeral.css'
 
 function App() {
 
   return (
+    <>
     <Router>
       <NavBar/>
-      <Switch>
-        <Route path="/">
-          <Home/>
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Empresa" element={<Empresa/>}/>
+        <Route path="/Contato" element={<Contato/>}/>
+      </Routes>
     </Router>
+    <Footer/>
+    </>
   )
 }
 
