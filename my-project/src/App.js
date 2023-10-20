@@ -18,7 +18,6 @@ function App() {
         <Route path="/Contato" element={<Contato/>}/>
       </Routes>
     </Router>
-    <Footer/>
     </div>
   )
 }

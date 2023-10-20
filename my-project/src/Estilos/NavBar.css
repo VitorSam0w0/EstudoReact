@@ -1,6 +1,24 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerNav {
+    position: fixed;
+    left: calc(45%);
+    background-color: #fff;
+    border-radius: 5px;
+    background-attachment: fixed;
+}
+
+
 .container ul {
     list-style: none;
     align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .container ul li {
@@ -8,6 +26,7 @@
     padding: 20px;
     font-size: 17pt;
     font-family: monospace;
+    text-align: center;
 }
 
 .container ul li:hover {
